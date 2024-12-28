@@ -5,19 +5,32 @@ using namespace rb_tree;
 int main() {
   // Пример использования с простым типом данных
   RB_Tree<int> intTree;
-  intTree.push(5);
-  intTree.push(3);
-  intTree.push(4);
-  intTree.push(7);
-  intTree.push(6);
+  intTree.push(25);
+  intTree.push(30);
+  intTree.push(8);
+  intTree.push(12);
+  intTree.push(10);
+  intTree.push(13);
   intTree.push(15);
-  intTree.push(23);
-  intTree.push(-2);
-  // std::cout << "OK\n";
+  intTree.push(9);
+  intTree.push(11);
+  intTree.push(6);
+  intTree.push(7);
+  intTree.push(5);
+
+  intTree.print();
+  std::cout << std::endl;
+
+  intTree.remove(8);
+
+  intTree.print();
+  std::cout << std::endl;
+
+  intTree.remove(25);
 
   intTree.print();
 
-  Node<int> *N = intTree.find(20);
+  Node<int> *N = intTree.find(-2);
   if (N)
     std::cout << "\nfound: " << N->data << std::endl;
   else
