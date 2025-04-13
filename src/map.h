@@ -5,7 +5,7 @@
 #include <stdexcept>
 #include <utility>
 
-#include "../tree/binary_tree.h"
+#include "binary_tree.h"
 
 namespace binary_tree {
 
